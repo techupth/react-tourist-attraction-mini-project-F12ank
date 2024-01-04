@@ -48,12 +48,24 @@ function App() {
                     border-radius: 40px;
                   `}
                 />
-                <div className="tripinfomation">
-                  <h2>{item.title}</h2>
+                <div className="trip-infomation">
+                  <a href={item.url} target="_blank" className="trip-title">
+                    {item.title}
+                  </a>
                   <p className="description">{item.description}</p>
                   <a href={item.url} target="_blank">
                     อ่านต่อ
                   </a>
+                  <div className="tag">
+                    {item.tags.map((tag, index) => {
+                      return <button key={index}>{tag}</button>;
+                    })}
+                  </div>
+                  <div className="picture-trip">
+                    <img src={item.photos[1]} />
+                    <img src={item.photos[2]} />
+                    <img src={item.photos[3]} />
+                  </div>
                 </div>
               </div>
             );
