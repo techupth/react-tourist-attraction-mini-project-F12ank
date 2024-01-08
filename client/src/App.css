@@ -1,0 +1,52 @@
+.description {
+  width: 800px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.triplist {
+  display: flex;
+  flex-direction: row;
+}
+
+.search {
+  position: relative;
+  right: 400px;
+}
+
+h1 {
+  font-size: 50px;
+  color: rgb(117, 188, 231);
+  text-align: center;
+}
+
+input {
+  width: 900px;
+  text-align: center;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: rgb(190, 179, 179);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.picture-trip img {
+  height: 100px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.trip-title {
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
